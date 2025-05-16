@@ -154,7 +154,47 @@ footer h4, footer h3 {
   left: 0;
 }
 
+@media (max-width: 768px) {
+  .slide-text {
+    font-size: 1rem;
+    padding: 0.5em;
+  }
+
+  .arrow {
+    font-size: 1.5rem;
+    padding: 0.5em;
+  }
+
+  header.about h2 {
+    font-size: 1.2rem;
+  }
+
+  .slideshow-container {
+    height: auto;
+  }
+
+  .slide-wrapper {
+    height: auto;
+  }
+
+  .slide img {
+    height: auto;
+  }
+}
+
+
 .arrow.right {
   right: 0;
+}
+
+/* Good: relative units */
+.slide-text {
+  font-size: 1.5rem;
+  padding: 1em;
+}
+
+/* Avoid: fixed units like this */
+.slide-text {
+  font-size: 30px; /* too rigid for small screens */
 }
 
