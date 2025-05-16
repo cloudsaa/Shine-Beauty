@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shine Beauty</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!--nav-->
+  <nav class="main-nav">
+    <img id="logo" src="imagessquare/logot.png" alt="logo">
+    <ul>
+      <li><a href="index.html">About Us</a></li>
+      <li><a href="produktet.html">Products</a></li>
+      <li><a href="kontakt.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <header class="about">
+      <h2>Glow naturally with<br>
+	  <span class="highlight">Shine Beauty</span></h2>
+      <p>Your skin deserves 100% organic beauty.</p>
+    </header>
+
+    <!-- llojet e produkteve -->
+    <section id="products">
+      <h2>Our Featured Products</h2>
+
+      <div class="slideshow-container">
+        <button class="arrow left" onclick="prevSlide()">&#10094;</button>
+
+        <div class="slide active">
+          <img src="imagessquare/anna.jpg" alt="Serum">
+          <h4>HydraGlow</h4>
+          <p>Products for oily skin.</p>
+        </div>
+
+        <div class="slide">
+          <img src="imagessquare/pexelss.jpg" alt="Cream">
+          <h4>Silky Night Cream</h4>
+          <p>Products for dry skin.</p>
+        </div>
+
+        <div class="slide">
+          <img src="imagessquare/serums.jpg" alt="Cleanser">
+          <h4>Gentle Cleanser</h4>
+          <p>Products for mixed skin.</p>
+        </div>
+
+        <button class="arrow right" onclick="nextSlide()">&#10095;</button>
+      </div>
+    </section>
+
+    <!-- review -->
+    <section id="testimonials">
+      <h2>Testimonials</h2>
+      <div class="testimonial">
+        <img src="images/rev2.jpg" alt="Smiling customer">
+        <h4>Sara M.</h4>
+        <p>“I have never felt softer skin!”</p>
+      </div>
+      <div class="testimonial">
+        <img src="images/rev3.jpg" alt="Smiling customer">
+        <h4>Lena K.</h4>
+        <p>“Shine Beauty helped me clear my acne.”</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer id="contact">
+    <h4>Contact Us</h4>
+    <h3>Email: hello@shinebeauty.com</h3>
+    <h3>Instagram: @shinebeauty</h3>
+    <h3>TikTok: @shinebeauty</h3>
+  </footer>
+
+  <script src="js/java.js"></script>
+</body>
+</html>

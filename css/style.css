@@ -1,0 +1,160 @@
+/* Reset basics */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #fff8f6;
+  color: #333;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f4cccc;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: white;
+  font-family: Times New Roman;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+.main-nav img{
+	width: 80px;
+	height: 80px;
+}
+
+.main-nav a:hover {
+  color: #b3004b;
+}
+
+/*header*/
+
+header {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+
+}
+
+header h2{
+	font-family: Times New Roman;
+	font-size: 4em;	
+	margin-bottom: 0px;
+}
+
+.highlight {
+  color: #f4cccc;
+}
+
+header p{
+	font-family: Times New Roman;
+	font-size: 0.9em;
+}
+
+header img{
+	width: 20em;
+	height: absolute;
+	align-self: center;
+    	
+}
+
+/* PRODUCT SECTION */
+section {
+  padding: 2rem;
+  text-align: center;
+}
+
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+section div {
+  display: inline-block;
+  width: 200px;
+  margin: 1rem;
+  vertical-align: top;
+}
+
+section div img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+section div h4 {
+  margin: 0.5rem 0 0.3rem;
+}
+
+section div p {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* FOOTER */
+footer {
+  background-color: #f4cccc;
+  padding: 2rem;
+  text-align: center;
+}
+
+footer h4, footer h3 {
+  margin: 0.1rem 0;
+}
+
+.slideshow-container {
+  position: relative;
+  width: 100%;
+  max-width: 80em;
+  margin: auto;
+}
+
+.slide {
+  display: none;
+  text-align: center;
+  margin-left: 25em;
+}
+
+.slide.active {
+  display: block;
+}
+
+.slide img {
+  width: 30em;
+  border-radius: 12px;
+  align-self: center;
+  position: center;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  background-color: rgba(255, 255, 255, 0.7);
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 0.3rem 0.7rem;
+  transform: translateY(-50%);
+}
+
+.arrow.left {
+  left: 0;
+}
+
+.arrow.right {
+  right: 0;
+}
+
