@@ -7,196 +7,212 @@ body {
   color: #333;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+
 .main-nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #9d856c;
-  padding: 1rem 2rem;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  background-color: rgb(219, 186, 226);
   position: fixed;
-  padding: 1em 2em;
+  width: 100%;
 }
 
 .main-nav ul {
   list-style: none;
   display: flex;
-  gap: 1rem;
-  margin: 0;
-  padding: 0;
+  gap: 1.5rem;
 }
 
-.main-nav a {
+.main-nav li a {
   text-decoration: none;
+  display: inline-block;
+  width: max-content;
   color: white;
-  font-family: Times New Roman;
-  font-weight: bold;
-  transition: color 0.3s ease;
-}
-.main-nav img{
-	width: 80px;
-	height: 80px;
+  margin-right: 1.25rem;
 }
 
 .main-nav a:hover {
-  color: #b3004b;
+  color: rgb(188, 138, 198);
 }
 
-/*header*/
-
-header {
-	display: flex;
-	flex-direction: column;
-	text-align: center;
-
-}
-
-header h2{
-	font-family: Times New Roman;
-	font-size: 4em;	
-	margin-bottom: 0px;
-}
-
-.highlight {
-  color: #9d856c;
-}
-
-header p{
-	font-family: Times New Roman;
-	font-size: 0.9em;
-}
-
-header img{
-	width: 20em;
-	height: absolute;
-	align-self: center;
-    	
-}
-
-/* PRODUCT SECTION */
-section {
-  padding: 2rem;
-  text-align: center;
-}
-
-section h2 {
-  font-size: 2rem;
-  margin-bottom: 2rem;
-}
-
-section div {
-  display: inline-block;
-  width: 200px;
-  margin: 1rem;
-  vertical-align: top;
-}
-
-section div img {
-  width: 100%;
+.main-nav img {
+  margin-left: 1.875rem;
+  width: 5rem;
   height: auto;
-  border-radius: 10px;
 }
 
-section div h4 {
-  margin: 0.5rem 0 0.3rem;
-}
-
-section div p {
-  font-size: 0.9rem;
-  color: #666;
-}
-
-/* FOOTER */
-footer {
-  background-color: #9d856c;
-  padding: 2rem;
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
+  margin-top: 1.875rem;
+  padding: 5rem;
 }
 
-footer h4, footer h3 {
-  margin: 0.1rem 0;
+.about h2 {
+  font-size: 3.75rem;
+  color: rgb(219, 186, 226);
+  font-family: 'Times New Roman', Times, serif;
+  margin-bottom: 0.5625rem;
 }
 
-.slideshow-container {
-  position: relative;
-  width: 100%;
-  max-width: 80em;
-  margin: auto;
+#highlight {
+  font-family: 'Brush Script MT', cursive;
+  font-weight: 100;
+  background-color: rgb(219, 186, 226);
+  padding: 1.25rem;
+  color: white;
 }
 
-.slide {
-  display: none;
-  text-align: center;
-  margin-left: 25em;
+.about p {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: large;
+  margin: 0;
+  color: rgb(219, 186, 226);
 }
 
-.slide.active {
+.container {
+  background-color: rgb(219, 186, 226);
   display: block;
+  text-align: center;
+  color: white;
+  padding-bottom: 1.875rem;
 }
 
-.slide img {
-  width: 30em;
-  border-radius: 12px;
-  align-self: center;
-  position: center;
+.container h2 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.875rem;
+  padding-top: 2.5rem;
+  padding-bottom: 0.125rem;
 }
 
-.arrow {
-  position: absolute;
-  top: 50%;
-  background-color: rgba(255, 255, 255, 0.7);
-  border: none;
-  font-size: 2rem;
-  cursor: pointer;
-  padding: 0.3rem 0.7rem;
-  transform: translateY(-50%);
+.products {
+  display: flex;
+  flex-wrap: wrap; /* so items don’t overflow */
+  justify-content: center; /* centers the items as a group */
+  gap: 2rem; /* spacing between items */
+  padding: 1rem;
 }
 
-.arrow.left {
-  left: 0;
+.prod {
+  padding: 0.625rem;
+  display: block;
+  align-items: center;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
 }
 
-@media (max-width: 768px) {
-  .slide-text {
-    font-size: 1rem;
-    padding: 0.5em;
-  }
-
-  .arrow {
-    font-size: 1.5rem;
-    padding: 0.5em;
-  }
-
-  header.about h2 {
-    font-size: 1.2rem;
-  }
-
-  .slideshow-container {
-    height: auto;
-  }
-
-  .slide-wrapper {
-    height: auto;
-  }
-
-  .slide img {
-    height: auto;
-  }
+.prod img {
+  width: 12.5rem;
+  height: auto;
+  margin: 0;
+  border-radius: 1.25rem;
 }
 
-
-.arrow.right {
-  right: 0;
+#logot1 {
+  float: inline-start;
+  padding: 1.875rem;
+  margin: 1.25rem;
 }
 
-/* Good: relative units */
-.slide-text {
-  font-size: 1.5rem;
-  padding: 1em;
+#logot1 img {
+  vertical-align: middle;
+  width: 12.5rem;
+  height: auto;
 }
 
-/* Avoid: fixed units like this */
-.slide-text {
-  font-size: 30px; /* too rigid for small screens */
+#logot2 {
+  padding: 1.875rem;
+  margin: 1.25rem;
+}
+
+#logot2 img {
+  vertical-align: middle;
+  width: 12.5rem;
+  height: auto;
+}
+
+.prod h4 {
+  font-size: 1.25rem;
+  margin: 0.125rem;
+  text-decoration: underline;
+  text-decoration-color: rgb(188, 138, 198);
+}
+
+.prod p {
+  font-family: 'Times New Roman', Times, serif;
+  margin: 0.25rem;
+  font-weight: bold;
+}
+
+#container2 {
+  display: block;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  color: rgb(219, 186, 226);
+  padding: 6.25rem;
+}
+
+#container2 h2 {
+  font-size: 1.875rem;
+  color: rgb(219, 186, 226);
+  font-family: 'Times New Roman', Times, serif;
+  margin-bottom: 0.5625rem;
+}
+
+#testi {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.testim img {
+  width: 12.5rem;
+  height: auto;
+  padding: 1.875rem;
+}
+
+.testim h4 {
+  font-size: 1.25rem;
+  margin: 0.125rem;
+}
+
+.testim p {
+  margin: 0.25rem;
+  font-weight: bold;
+}
+
+.testim {
+  transition: transform 0.3s ease;
+}
+
+.testim:hover {
+  transform: scale(1.1);
+}
+
+footer {
+  background-color: rgb(219, 186, 226);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+footer h4 {
+  font-size: 1.875rem;
+  margin: 0.125rem;
+}
+
+footer h3 {
+  font-size: 0.9375rem;
+  margin: 0.0625rem;
 }
 

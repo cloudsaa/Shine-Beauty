@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Shine Beauty</title>
   <link rel="stylesheet" href="css/style.css">
-
+  <link rel="icon" href="imagessquare/logot.png" type="image/png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
 
@@ -23,51 +24,59 @@
   <main>
     <header class="about">
       <h2>Glow naturally with<br>
-	  <span class="highlight">Shine Beauty</span></h2>
+	  <span id="highlight">Shine Beauty</span></h2>
       <p>Your skin deserves 100% organic beauty.</p>
     </header>
 
     <!-- llojet e produkteve -->
-    <section id="products">
-      <h2>Our Featured Products</h2>
+    <section class="container">
+      <h2 id="title">FEATURED PRODUCTS</h2>
+      <section class="products">
+        <div class="prod">
+          <div id="logot1">
+            <img src="imagessquare/logot.png" alt="logo">
+          </div>
 
-      <div class="slideshow-container">
-        <button class="arrow left" onclick="prevSlide()">&#10094;</button>
-
-        <div class="slide active">
           <img src="imagessquare/anna.jpg" alt="Serum">
           <h4>HydraGlow</h4>
+          <p>30&#8364</p>
           <p>Products for oily skin.</p>
         </div>
 
-        <div class="slide">
+        <div class="prod">
           <img src="imagessquare/pexelss.jpg" alt="Cream">
           <h4>Silky Night Cream</h4>
+          <p>40&#8364</p>
           <p>Products for dry skin.</p>
         </div>
 
-        <div class="slide">
+        <div class="prod">
           <img src="imagessquare/serums.jpg" alt="Cleanser">
           <h4>Gentle Cleanser</h4>
+          <p>30&#8364</p>
           <p>Products for mixed skin.</p>
         </div>
 
-        <button class="arrow right" onclick="nextSlide()">&#10095;</button>
-      </div>
+        <div id="logot2">
+          <img src="imagessquare/logot.png" alt="logo">
+        </div>
+      </section>
     </section>
 
     <!-- review -->
-    <section id="testimonials">
-      <h2>Testimonials</h2>
-      <div class="testimonial">
-        <img src="images/rev2.jpg" alt="Smiling customer">
-        <h4>Sara M.</h4>
-        <p>“I have never felt softer skin!”</p>
-      </div>
-      <div class="testimonial">
-        <img src="images/rev3.jpg" alt="Smiling customer">
-        <h4>Lena K.</h4>
-        <p>“Shine Beauty helped me clear my acne.”</p>
+    <section id="container2">
+      <h2>TESTIMONIALS</h2>
+      <div id="testi">
+        <div class="testim">
+          <img src="images/rev2.jpg" alt="Smiling customer">
+          <h4>Sara M.</h4>
+          <p>“I have never felt softer skin!”</p>
+        </div>
+        <div class="testim">
+          <img src="images/rev3.jpg" alt="Smiling customer">
+          <h4>Lena K.</h4>
+          <p>“Shine Beauty helped me clear my acne.”</p>
+        </div>
       </div>
     </section>
   </main>
@@ -75,11 +84,10 @@
   <!-- FOOTER -->
   <footer id="contact">
     <h4>Contact Us</h4>
-    <h3>Email: hello@shinebeauty.com</h3>
-    <h3>Instagram: @shinebeauty</h3>
-    <h3>TikTok: @shinebeauty</h3>
+    <h3><i class="fas fa-envelope"></i> hello@shinebeauty.com</h3>
+    <h3><i class="fab fa-instagram"></i> @shinebeauty</h3>
+    <h3><i class="fab fa-tiktok"></i> @shinebeauty</h3>
   </footer>
 
-  <script src="js/java.js"></script>
 </body>
 </html>
